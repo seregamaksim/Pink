@@ -1,14 +1,31 @@
-'use strict';
- 
-var gulp = require('gulp');
-var sass = require('gulp-sass');
- 
-gulp.task('sass', function () {
-  gulp.src('./sass/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./css'));
-});
- 
-gulp.task('sass:watch', function () {
-  gulp.watch('./sass/**/*.scss', ['sass']);
-});
+const { src, dest, parallel, watch, series } = require('gulp');
+const sass = require('gulp-sass');
+const browserSync = require('browser-sync').create();
+
+
+function browser() {
+    browserSync.init({
+        server: {
+            baseDir: "src"
+        },
+        notify: false,
+    })
+}
+
+function watchFiles() {
+    watch("src/sass/**/*.scss", css);
+    watch("src/*.html").on('change', browserSync.reload);
+}
+
+function css() {
+    return src("src/sass/**/*.scss")
+        .pipe(sass())
+        .pipe(dest("src/css"))
+        .pipe(browserSync.stream());
+}
+
+exports.css = css;
+exports.default = series(
+    series(css), 
+    parallel(browser, watchFiles)
+);
