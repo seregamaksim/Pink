@@ -1,0 +1,29 @@
+.soft {
+    position: relative;
+}
+.soft__iphone-tablet,
+.soft__iphone-desktop {
+    display: none;
+}
+.soft__iphone-mobile {
+    margin-top: 82px;
+    margin-left: -20px;
+    margin-bottom: -3px;
+}
+@media (min-width: 660px) {
+    .soft__iphone-mobile {
+        display: none;
+    }
+    .soft__iphone-tablet {
+        display: block;
+        margin-top: 72px;
+    }
+}
+@media (min-width: 1200px) {
+    .soft__iphone-tablet {
+        display: none;
+    }
+    .soft__iphone-desktop {
+        display: block;
+    }
+}

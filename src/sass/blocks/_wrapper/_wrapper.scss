@@ -1,0 +1,17 @@
+.wrapper {
+    width: 87.5%;
+    max-width: 280px;
+    margin: 0 auto;
+}
+@media (min-width: 660px) {
+    .wrapper {
+        width: 93.93%;
+        max-width: 620px;
+    }
+}
+@media (min-width: 1200px) {
+    .wrapper {
+        width: 78.33%;
+        max-width: 940px;
+    }
+}

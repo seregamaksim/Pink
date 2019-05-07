@@ -1,2 +1,197 @@
+.wrapper {
+  width: 87.5%;
+  max-width: 280px;
+  margin: 0 auto; }
+
+@media (min-width: 660px) {
+  .wrapper {
+    width: 93.93%;
+    max-width: 620px; } }
+
+@media (min-width: 1200px) {
+  .wrapper {
+    width: 78.33%;
+    max-width: 940px; } }
+
+.main {
+  width: auto;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px; }
+
+.page-header {
+  background-image: url("../img/bg-mobile.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #2b3b4b; }
+
+@media (min-width: 660px) {
+  .page-header {
+    background-image: url("../img/bg-tablet.png"); } }
+
+@media (min-width: 1200px) {
+  .page-header {
+    background-image: url("../img/bg-desktop.png"); } }
+
+.main-nav {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 21px 0; }
+
+.main-nav .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.main-nav__logo {
+  display: inline-block;
+  width: 75px;
+  height: 22px;
+  background-image: url("../img/logo-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
+.main-nav__button {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  background-color: transparent; }
+
+.main-nav__button span,
+.main-nav__button span::before,
+.main-nav__button span::after {
+  position: absolute;
+  width: 50px;
+  height: 4px;
+  background-color: #fff;
+  top: 50%;
+  margin-top: -2px;
+  left: 0; }
+
+.main-nav__button span::before,
+.main-nav__button span::after {
+  content: "";
+  display: block; }
+
+.main-nav__button span::before {
+  transform: translateY(-10px); }
+
+.main-nav__button span::after {
+  transform: translateY(10px); }
+
+.main-nav__list {
+  display: none; }
+
+.main-nav__list li {
+  list-style: none; }
+
+.main-nav__list a {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+@media (min-width: 660px) {
+  .main-nav {
+    padding: 25px 0 42px 0; }
+  .main-nav__logo {
+    background-image: url("../../img/logo-tablet.png");
+    width: 147px;
+    height: 40px; } }
+
+@media (min-width: 1200px) {
+  .main-nav {
+    padding: 25px 0 42px 0; }
+  .main-nav__logo {
+    background-image: url("../../img/logo-desktop.png");
+    width: 147px;
+    height: 40px; } }
+
 .soft {
-  background: url("../../img/bg-mobile.png"); }
+  position: relative; }
+
+.soft__iphone-tablet,
+.soft__iphone-desktop {
+  display: none; }
+
+.soft__iphone-mobile {
+  margin-top: 82px;
+  margin-left: -20px;
+  margin-bottom: -3px; }
+
+@media (min-width: 660px) {
+  .soft__iphone-mobile {
+    display: none; }
+  .soft__iphone-tablet {
+    display: block;
+    margin-top: 72px; } }
+
+@media (min-width: 1200px) {
+  .soft__iphone-tablet {
+    display: none; }
+  .soft__iphone-desktop {
+    display: block; } }
+
+.soft-file {
+  background-color: #1d2631;
+  color: #fff;
+  line-height: 24px; }
+
+.soft-file .wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 48px; }
+
+.soft-test {
+  margin: 0 auto; }
+
+.soft-file__download {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+  border: 3px solid #fff;
+  border-radius: 30px;
+  padding: 15px 35px 15px 36px; }
+
+.soft-file__list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  margin: 0;
+  padding: 0;
+  margin-top: 49px;
+  list-style: none; }
+
+.soft-file__item {
+  display: inline-block;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+.apple {
+  background-image: url("../img/apple-logo.png");
+  width: 47px;
+  height: 56px; }
+
+.android {
+  background-image: url("../img/android-logo.png");
+  width: 43px;
+  height: 47px; }
+
+.microsoft {
+  background-image: url("../img/microsoft-logo.png");
+  width: 44px;
+  height: 41px; }
+
+.soft-file__description {
+  margin: 0;
+  padding: 0;
+  margin-top: 25px;
+  margin-bottom: 32px;
+  text-align: center;
+  font-weight: 300; }

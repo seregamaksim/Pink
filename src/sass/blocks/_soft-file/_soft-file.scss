@@ -1,0 +1,60 @@
+.soft-file {
+    background-color: $soft-bg-color;
+    color: $font-color;
+    line-height: 24px;
+}
+.soft-file .wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 48px;
+}
+.soft-test {
+    margin: 0 auto;
+}
+.soft-file__download {
+    text-decoration: none;
+    color: $font-color;
+    font-size: $font-size;
+    font-weight: bold;
+    line-height: 18px;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    padding: 15px 35px 15px 36px;
+}
+.soft-file__list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin: 0;
+    padding: 0;
+    margin-top: 49px;
+    list-style: none;
+}
+.soft-file__item {
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.apple {
+    background-image: url("../img/apple-logo.png");
+    width: 47px;
+    height: 56px;
+}
+.android {
+    background-image: url("../img/android-logo.png");
+    width: 43px;
+    height: 47px;
+}
+.microsoft {
+    background-image: url("../img/microsoft-logo.png");
+    width: 44px;
+    height: 41px;
+}
+.soft-file__description {
+    margin: 0;
+    padding: 0;
+    margin-top: 25px;
+    margin-bottom: 32px;
+    text-align: center;
+    font-weight: 300;
+}

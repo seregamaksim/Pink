@@ -1,0 +1,17 @@
+.page-header {
+    background-image: url("../img/bg-mobile.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #2b3b4b;
+}
+@media (min-width: 660px) {
+    .page-header {
+        background-image: url("../img/bg-tablet.png");
+    }
+}
+@media (min-width: 1200px) {
+    .page-header {
+        background-image: url("../img/bg-desktop.png");
+    }
+}
