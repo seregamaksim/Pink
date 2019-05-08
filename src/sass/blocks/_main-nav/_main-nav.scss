@@ -60,7 +60,7 @@
     text-transform: uppercase;
     font-weight: bold;
 }
-@media (min-width: 660px) {
+@media (min-width: $screen-tablet) {
     .main-nav {
         padding: 25px 0 42px 0;
     }
@@ -70,7 +70,7 @@
         height: 40px;
     }
 }
-@media (min-width: 1200px) {
+@media (min-width: $screen-desktop) {
     .main-nav {
         padding: 25px 0 42px 0;
     }

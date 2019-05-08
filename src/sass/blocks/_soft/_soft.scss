@@ -10,16 +10,17 @@
     margin-left: -20px;
     margin-bottom: -3px;
 }
-@media (min-width: 660px) {
+@media (min-width: $screen-tablet) {
     .soft__iphone-mobile {
         display: none;
     }
     .soft__iphone-tablet {
         display: block;
-        margin-top: 72px;
+        margin-top: 74px;
+        margin-left: -20px;
     }
 }
-@media (min-width: 1200px) {
+@media (min-width: $screen-desktop) {
     .soft__iphone-tablet {
         display: none;
     }

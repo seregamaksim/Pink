@@ -1,4 +1,6 @@
 .soft-file {
+    position: absolute;
+    width: 100%;
     background-color: $soft-bg-color;
     color: $font-color;
     line-height: 24px;
@@ -6,10 +8,10 @@
 .soft-file .wrapper {
     display: flex;
     flex-direction: column;
-    padding-top: 48px;
+    padding-top: 28px;
 }
-.soft-test {
-    margin: 0 auto;
+.soft-file__title {
+    display: none;
 }
 .soft-file__download {
     text-decoration: none;
@@ -20,6 +22,7 @@
     border: 3px solid #fff;
     border-radius: 30px;
     padding: 15px 35px 15px 36px;
+    
 }
 .soft-file__list {
     display: flex;
@@ -27,7 +30,7 @@
     align-items: baseline;
     margin: 0;
     padding: 0;
-    margin-top: 49px;
+    margin-top: 32px;
     list-style: none;
 }
 .soft-file__item {
@@ -53,8 +56,45 @@
 .soft-file__description {
     margin: 0;
     padding: 0;
-    margin-top: 25px;
-    margin-bottom: 32px;
+    margin-top: 20px;
+    margin-bottom: 29px;
     text-align: center;
     font-weight: 300;
+}
+@media (min-width: $screen-tablet) {
+    .soft-file {
+        width: 48.387%;
+        max-width: 300px;
+        top: 0;
+        left: 3.03%;
+        background-color: transparent;
+        .wrapper {
+            width: 100%;
+            max-width: 300px;
+        }
+        &__title {
+            display: block;
+            margin: 0;
+            padding: 0;
+            font-size: 40px;
+            line-height: 40px;
+            font-weight: 300;
+            text-align: center;
+            max-width: 190px;
+            align-self: center;
+            margin-bottom: 38px;
+        }
+        &__download {
+            padding-left: 43px;
+            padding-right: 43px;
+        }
+        &__description {
+            font-size: $font-size;
+            line-height: 24px;
+        }
+    }
+    
+}
+@media (min-width: $screen-desktop) {
+    
 }

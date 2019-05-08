@@ -3,13 +3,13 @@
     max-width: 280px;
     margin: 0 auto;
 }
-@media (min-width: 660px) {
+@media (min-width: $screen-tablet) {
     .wrapper {
         width: 93.93%;
         max-width: 620px;
     }
 }
-@media (min-width: 1200px) {
+@media (min-width: $screen-desktop) {
     .wrapper {
         width: 78.33%;
         max-width: 940px;

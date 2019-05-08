@@ -5,12 +5,12 @@
     background-size: cover;
     background-color: #2b3b4b;
 }
-@media (min-width: 660px) {
+@media (min-width: $screen-tablet) {
     .page-header {
         background-image: url("../img/bg-tablet.png");
     }
 }
-@media (min-width: 1200px) {
+@media (min-width: $screen-desktop) {
     .page-header {
         background-image: url("../img/bg-desktop.png");
     }

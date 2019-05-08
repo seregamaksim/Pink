@@ -1,0 +1,10 @@
+.features {
+    // Отступ, чтобы контент был виден из под блока soft-file
+    margin-top: 274px; 
+
+}
+@media (min-width: $screen-tablet) {
+    .features {
+        margin-top: 0;
+    }
+}

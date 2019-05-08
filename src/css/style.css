@@ -128,7 +128,8 @@
     display: none; }
   .soft__iphone-tablet {
     display: block;
-    margin-top: 72px; } }
+    margin-top: 74px;
+    margin-left: -20px; } }
 
 @media (min-width: 1200px) {
   .soft__iphone-tablet {
@@ -137,6 +138,8 @@
     display: block; } }
 
 .soft-file {
+  position: absolute;
+  width: 100%;
   background-color: #1d2631;
   color: #fff;
   line-height: 24px; }
@@ -144,10 +147,10 @@
 .soft-file .wrapper {
   display: flex;
   flex-direction: column;
-  padding-top: 48px; }
+  padding-top: 28px; }
 
-.soft-test {
-  margin: 0 auto; }
+.soft-file__title {
+  display: none; }
 
 .soft-file__download {
   text-decoration: none;
@@ -165,7 +168,7 @@
   align-items: baseline;
   margin: 0;
   padding: 0;
-  margin-top: 49px;
+  margin-top: 32px;
   list-style: none; }
 
 .soft-file__item {
@@ -191,7 +194,42 @@
 .soft-file__description {
   margin: 0;
   padding: 0;
-  margin-top: 25px;
-  margin-bottom: 32px;
+  margin-top: 20px;
+  margin-bottom: 29px;
   text-align: center;
   font-weight: 300; }
+
+@media (min-width: 660px) {
+  .soft-file {
+    width: 48.387%;
+    max-width: 300px;
+    top: 0;
+    left: 3.03%;
+    background-color: transparent; }
+    .soft-file .wrapper {
+      width: 100%;
+      max-width: 300px; }
+    .soft-file__title {
+      display: block;
+      margin: 0;
+      padding: 0;
+      font-size: 40px;
+      line-height: 40px;
+      font-weight: 300;
+      text-align: center;
+      max-width: 190px;
+      align-self: center;
+      margin-bottom: 38px; }
+    .soft-file__download {
+      padding-left: 43px;
+      padding-right: 43px; }
+    .soft-file__description {
+      font-size: 18px;
+      line-height: 24px; } }
+
+.features {
+  margin-top: 274px; }
+
+@media (min-width: 660px) {
+  .features {
+    margin-top: 0; } }
