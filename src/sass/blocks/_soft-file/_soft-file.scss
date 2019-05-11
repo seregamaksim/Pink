@@ -85,16 +85,28 @@
             margin-bottom: 38px;
         }
         &__download {
-            padding-left: 43px;
-            padding-right: 43px;
+            padding: 17px 43px;
         }
         &__description {
             font-size: $font-size;
             line-height: 24px;
         }
     }
-    
 }
 @media (min-width: $screen-desktop) {
-    
+    .soft-file {
+        width: 31.914%;
+        left: 10.83%;
+        &__title {
+            font-size: 50px;
+            min-width: 234px;
+            line-height: 60px;
+        }
+        &__download {
+            font-size: 21px;
+            padding-left: 28px;
+            padding-right: 28px;
+            line-height: 18px;
+        }
+    }
 }

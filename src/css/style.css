@@ -41,7 +41,7 @@
 .main-nav .wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: baseline; }
 
 .main-nav__logo {
   display: inline-block;
@@ -82,7 +82,9 @@
   transform: translateY(10px); }
 
 .main-nav__list {
-  display: none; }
+  display: none;
+  margin: 0;
+  padding: 0; }
 
 .main-nav__list li {
   list-style: none; }
@@ -98,6 +100,8 @@
 @media (min-width: 660px) {
   .main-nav {
     padding: 25px 0 42px 0; }
+    .main-nav .wrapper {
+      max-width: 100%; }
   .main-nav__logo {
     background-image: url("../../img/logo-tablet.png");
     width: 147px;
@@ -109,7 +113,20 @@
   .main-nav__logo {
     background-image: url("../../img/logo-desktop.png");
     width: 147px;
-    height: 40px; } }
+    height: 40px; }
+  .main-nav__button {
+    display: none; }
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    margin-top: 15px;
+    width: 65.957%; }
+    .main-nav__list a {
+      text-transform: unset;
+      font-weight: 300;
+      line-height: 18px; } }
 
 .soft {
   position: relative; }
@@ -135,7 +152,8 @@
   .soft__iphone-tablet {
     display: none; }
   .soft__iphone-desktop {
-    display: block; } }
+    display: block;
+    margin-top: 100px; } }
 
 .soft-file {
   position: absolute;
@@ -221,11 +239,24 @@
       align-self: center;
       margin-bottom: 38px; }
     .soft-file__download {
-      padding-left: 43px;
-      padding-right: 43px; }
+      padding: 17px 43px; }
     .soft-file__description {
       font-size: 18px;
       line-height: 24px; } }
+
+@media (min-width: 1200px) {
+  .soft-file {
+    width: 31.914%;
+    left: 10.83%; }
+    .soft-file__title {
+      font-size: 50px;
+      min-width: 234px;
+      line-height: 60px; }
+    .soft-file__download {
+      font-size: 21px;
+      padding-left: 28px;
+      padding-right: 28px;
+      line-height: 18px; } }
 
 .features {
   margin-top: 274px; }
