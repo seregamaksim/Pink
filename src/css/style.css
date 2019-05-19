@@ -259,8 +259,116 @@
       line-height: 18px; } }
 
 .features {
-  margin-top: 274px; }
+  margin-top: 274px;
+  padding-top: 45px; }
+  .features__offer p {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #283645;
+    text-align: center;
+    margin-bottom: 40px; }
 
 @media (min-width: 660px) {
   .features {
-    margin-top: 0; } }
+    margin-top: 0; }
+    .features__offer {
+      padding-bottom: 50px; }
+    .features__offer p {
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 0; } }
+
+@media (min-width: 1200px) {
+  .features__offer p {
+    font-size: 50px;
+    line-height: 50px; } }
+
+.features-text {
+  background-color: #f2f2f2; }
+  .features-text__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center; }
+  .features-text__title {
+    font-size: 18px;
+    line-height: 24px; }
+  .features-text__description {
+    font-size: 14px;
+    line-height: 24px;
+    color: #283645; }
+
+@media (min-width: 660px) {
+  .features-text__item {
+    max-width: 310px;
+    text-align: left; } }
+
+@media (min-width: 1200px) {
+  .features-text__list {
+    flex-direction: row; }
+  .features-text__item {
+    max-width: 275px; }
+  .features-text__title {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center; }
+  .features-text__description {
+    font-size: 18px;
+    line-height: 30px; } }
+
+.effect {
+  display: none; }
+
+@media (min-width: 660px) {
+  .effect {
+    display: block;
+    background-color: #fff;
+    padding-top: 60px;
+    margin-bottom: 53px; }
+    .effect .wrapper {
+      display: flex;
+      justify-content: space-between; }
+  .effect__text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left; }
+  .effect__title {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    line-height: 36px; }
+  .effect__description {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 12px 0; }
+  .effect__more {
+    font-size: 14px;
+    line-height: 24px;
+    color: #d22856; } }
+
+@media (min-width: 1200px) {
+  .effect {
+    background-color: #f2f2f2; }
+  .effect__text {
+    width: 60.638%; }
+  .effect__title {
+    line-height: 30px; }
+  .effect__title br {
+    display: none; }
+  .effect__description {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 25px 0 30px 0; }
+  .effect__more {
+    font-size: 18px;
+    line-height: 30px; } }
