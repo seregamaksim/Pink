@@ -1,31 +1,20 @@
 .soft {
     position: relative;
 }
-.soft__iphone-tablet,
-.soft__iphone-desktop {
-    display: none;
-}
-.soft__iphone-mobile {
+
+.soft__iphone {
     margin-top: 82px;
     margin-left: -20px;
     margin-bottom: -3px;
 }
 @media (min-width: $screen-tablet) {
-    .soft__iphone-mobile {
-        display: none;
-    }
-    .soft__iphone-tablet {
-        display: block;
+    .soft__iphone {
         margin-top: 74px;
         margin-left: -20px;
     }
 }
 @media (min-width: $screen-desktop) {
-    .soft__iphone-tablet {
-        display: none;
-    }
-    .soft__iphone-desktop {
-        display: block;
+    .soft__iphone {
         margin-top: 100px;
     }
 }

@@ -21,28 +21,43 @@
 
 }
 @media (min-width: $screen-tablet) {
-
+    .features-text .wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .features-text__list {
+        justify-content: center;
+    }
     .features-text__item {
         max-width: 310px;
         text-align: left;
+        
     }
 }
 @media (min-width: $screen-desktop) {
+    .features-text .wrapper {
+        flex-direction: column-reverse;
+    }
     .features-text__list {
         flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
     .features-text__item {
-        max-width: 275px;
+        max-width: 300px;
+        text-align: center;
     }
     .features-text__title {
         font-size: 30px;
         line-height: 30px;
-        
         text-align: center;
     }
     .features-text__description {
         font-size: 18px;
         line-height: 30px;
+        max-width: 270px;
+        margin: 0 auto;
     }
 }
   

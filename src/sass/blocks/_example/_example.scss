@@ -1,0 +1,49 @@
+.example {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.iphone-before,
+.iphone-after {
+    display: none;
+}
+@media (min-width: $screen-tablet) {
+    
+}
+@media (min-width: $screen-desktop) {
+    .iphone-before,
+    .iphone-after {
+        display: block;
+    }
+    .example {
+        display: flex;
+        justify-content: space-around;
+    }
+    .example__item {
+        position: relative;
+    }
+    .example__item::before {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 250px;
+        height: 30px;
+        bottom: 10px;
+        left: -30px;
+        background-color: #f2f2f2;
+        box-shadow: 0px -15px 15px -10px #000;
+        // box-shadow: 0px -15px 20px -15px rgba(0, 0, 0, 0.75);
+    }
+    .example__item::after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 270px;
+        height: 50px;
+        background-color: #f2f2f2;
+        left: -40px;
+        bottom: 0;
+        
+    }
+}

@@ -1,0 +1,96 @@
+.contact {
+    position: relative;
+}
+.contact__map {
+    position: relative;
+    // top: 300px;
+    margin-top: 350px;
+    z-index: -1000;
+}
+.contact__address {
+    position: absolute;
+    top: 0;
+    padding-top: 50px;
+    padding-bottom: 75px;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+}
+.contact .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact__question {
+    color: #283645;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+.contact__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.contact__item {
+    margin: 30px 0;
+    h3, p {
+        margin: 0;
+        padding: 0;
+    }
+    h3 {
+        font-size: 18px;
+        line-height: 18px;
+        color: #283645;
+        margin-bottom: 13px;
+    }
+    p {
+        font-size: 24px;
+        line-height: 24px;
+        color: #d22856;
+        font-weight: 300;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+@media (min-width: $screen-tablet) {
+    .contact__address {
+        padding-bottom: 100px;
+    }
+    .contact__question {
+        font-size: 40px;
+        line-height: 40px;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+    .contact__list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+@media (min-width: $screen-desktop) {
+    .contact__map {
+        margin-top: 400px;
+    }
+    .contact__address {
+        padding-bottom: 125px;
+    }
+    .contact__question {
+        font-size: 50px;
+        line-height: 50px;
+        max-width: 500px;
+    }
+    .contact__item:nth-child(2) {
+        order: 2;
+        
+    }
+    .contact__item:nth-child(3) {
+        order: 1;
+        margin-right: 100px;
+        margin-left: 115px;
+    }
+}

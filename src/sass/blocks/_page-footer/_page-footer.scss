@@ -1,0 +1,53 @@
+.page-footer {
+    display: none;
+}
+@media (min-width: $screen-tablet) {
+    .page-footer {
+        display: block;
+        background-color: #fff;
+        z-index: 1000;
+        padding: 35px 0 40px 0;
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    .page-footer__social-list {
+        display: flex;
+        width: 200px;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .page-footer__social-item {
+        width: 51px;
+        height: 51px;
+        background-color: #d22856;
+        border-radius: 50%;
+    }
+    .page-footer__made {
+        position: relative;
+        font-size: 14px;
+        line-height: 18px;
+        color: #283645;
+        text-decoration: none;
+        padding-right: 43px;
+    }
+    .page-footer__made::after {
+        content: "";
+        position: absolute;
+        background-image: url(../img/academy-logo.png);
+        background-position: center center;
+        width: 27px;
+        height: 34px;
+        top: -5px;
+        right: 0;
+    }
+}
+@media (min-width: $screen-desktop) {
+    .page-footer__made {
+        font-size: 18px;
+    }
+}
