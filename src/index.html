@@ -11,31 +11,33 @@
 </head>
 <body class="main">
     <header class="page-header">
-        <nav class="page-header__nav main-nav main-nav--active">
+        <nav class="page-header__nav main-nav">
+            <div class="govno">
             <div class="wrapper">
                 <picture>
                     <source media="(min-width: 1200px)" srcset="img/logo-desktop.png">
                     <source media="(min-width: 660px)" srcset="img/logo-tablet.png">
-                    <img src="img/logo-mobile.png" alt="Логотип">
+                    <img class="main-nav__logo" src="img/logo-mobile.png" alt="Логотип">
                 </picture>
                 <a href="" class="main-nav__button">
                     <span></span>
                 </a>
-                <ul class="main-nav__list main-nav__list--active">
-                    <li class="main-nav__item">
-                        <a>Главная</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="gallery.html">Фотографии</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="competition.html">Конкурс</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="">HTML Academy</a>
-                    </li>
-                </ul>
             </div>
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a>Главная</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="gallery.html">Фотографии</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="competition.html">Конкурс</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="">HTML Academy</a>
+                </li>
+            </ul>
+        </div>
         </nav>
         <section class="page-header__soft soft">
             <div class="wrapper">

@@ -5,12 +5,9 @@
 .main-nav .wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     flex-wrap: wrap;
-}
-.main-nav__logo {
-    display: inline-block;
-    width: 75px;
-    height: 22px;
+    max-width: 100%;
 }
 // Начало стилей ПОП-АПА
 .main-nav__button {
@@ -59,7 +56,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 87.5%;
     transition: 0.3s;
     transform-origin: top center;
     transform: scaleY(0) translateY(-40%);
@@ -69,15 +65,21 @@
 }
 .main-nav__list--active {
     height: auto;
+    margin-top: 25px;
     transform: scaleY(1)  translateY(0);
+    border-top: 1px solid #000;
 }
 .main-nav--active {
     background-color: #283645;
+    padding-bottom: 0;
 }
 .main-nav__list li {
+    width: 100%;
+    text-align: center;
     list-style: none;
-    padding: 20px 15px;
-    border-top: 1px solid #000000;
+    padding: 20px 0 15px 0;
+    border-top: 1px solid #485461;
+    border-bottom: 1px solid #000000;
 }
 .main-nav__list a{
     font-family: $font;
@@ -90,39 +92,50 @@
 }
 @media (min-width: $screen-tablet) {
     .main-nav {
-        padding: 25px 0 42px 0;
-        .wrapper {
-            max-width: 100%;
-        }
+        padding: 25px 0 35px 0;
     }
-    .main-nav__logo {
-        width: 147px;
-        height: 40px;
+    
+    .main-nav--active {
+        padding-bottom: 0;
     }
 }
 @media (min-width: $screen-desktop) {
-    .main-nav {
-        padding: 25px 0 42px 0;
+    .govno {
+        width: 78.33%;
+        // max-width: 940px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
     }
-    .main-nav__logo {
-        width: 147px;
-        height: 40px;
+    .main-nav .wrapper {
+        width: auto;
+        margin: 0;
     }
     .main-nav__button {
         display: none;
     }
     .main-nav__list {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
-        align-items: center;
-        align-self: center;
-        margin-top: 15px;
+        // align-self: center;
         width: 65.957%;
+        transition: none;
+        transform: scaleY(1) translateY(0);
+        transform-origin: 50% 50% 0;
+        border: none;
+        height: auto;
+        margin: 0;
         a {
             text-transform: unset;
             font-weight: 300;
             line-height: 18px;
-
+        }
+        li {
+            border: none;
+            padding: 0;
+            width: auto;
         }
     }
 }
