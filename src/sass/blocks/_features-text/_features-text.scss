@@ -1,5 +1,12 @@
 .features-text {
-    background-color: #f2f2f2;
+    // background-color: #f2f2f2;
+    background-image: url(../../img/Shape2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    .wrapper {
+        // Паддинг для того, чтобы фон встал как надо
+        padding-top: 87px;
+    }
     &__list {
         display: flex;
         flex-direction: column;
@@ -21,10 +28,16 @@
 
 }
 @media (min-width: $screen-tablet) {
+    .features-text {
+        background-image: url(../../img/Shape2-tablet.png);
+        background-position: center -5px;
+        // Отрицательные значения, чтобы немного опустить фон
+    }
     .features-text .wrapper {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+        padding-top: 30px;
     }
     .features-text__list {
         justify-content: center;
@@ -36,8 +49,13 @@
     }
 }
 @media (min-width: $screen-desktop) {
+    .features-text {
+        background-image: url(../../img/Shape2-desktop.png);
+        background-position: center 10px;
+    }
     .features-text .wrapper {
         flex-direction: column-reverse;
+        padding-top: 10px;
     }
     .features-text__list {
         flex-direction: row;

@@ -9,6 +9,20 @@
     flex-wrap: wrap;
     max-width: 100%;
 }
+.main-nav__logo {
+    fill: white;
+}
+.main-nav__logo:hover {
+    fill: #d22856;
+}
+.main-nav__logo:active {
+    fill: white;
+    opacity: 0.3;
+}
+.main-nav__logo-tablet,
+.main-nav__logo-desktop {
+    display: none;
+}
 // Начало стилей ПОП-АПА
 .main-nav__button {
     position: relative;
@@ -28,10 +42,22 @@
     margin-top: -2px;
     right: 0;
 }
+.main-nav__button:hover span,
+.main-nav__button:hover span::before,
+.main-nav__button:hover span::after {
+    background-color: #d22856;
+}
+.main-nav__button:active span,
+.main-nav__button:active span::before,
+.main-nav__button:active span::after {
+    background-color: #d22856;
+    opacity: 0.3;
+}
 .main-nav__button span::before,
 .main-nav__button span::after {
     content: "";
     display: block;
+    transition: 0.3s;
 }
 .main-nav__button span::before {
     transform: translateY(-10px);
@@ -56,7 +82,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: 0.3s;
+    transition: 0.7s;
     transform-origin: top center;
     transform: scaleY(0) translateY(-40%);
     height: 0;
@@ -64,9 +90,10 @@
     padding: 0;
 }
 .main-nav__list--active {
-    height: auto;
+    height: 100%;
     margin-top: 25px;
-    transform: scaleY(1)  translateY(0);
+    transition: 0.7s;
+    transform: scaleY(1)  translateY(0%);
     border-top: 1px solid #000;
 }
 .main-nav--active {
@@ -81,6 +108,13 @@
     border-top: 1px solid #485461;
     border-bottom: 1px solid #000000;
 }
+.main-nav__item:hover a[href]{
+    color: #d22856;
+}
+.main-nav__item:active a[href]{
+    color: #d22856;
+    opacity: 0.3;
+}
 .main-nav__list a{
     font-family: $font;
     color: $font-color;
@@ -88,29 +122,45 @@
     font-size: $font-size;
     text-transform: uppercase;
     font-weight: bold;
-    
 }
 @media (min-width: $screen-tablet) {
     .main-nav {
         padding: 25px 0 35px 0;
     }
-    
+    .main-nav__logo-mobile {
+        display: none;
+    }
+    .main-nav__logo-tablet {
+        display: block;
+    }
     .main-nav--active {
         padding-bottom: 0;
     }
 }
 @media (min-width: $screen-desktop) {
-    .govno {
+    .main-nav--active {
+        // Если с мобил или планшетов перейти
+        // не закрыв меню, то отображается неправильно
+        // Это исправляет!
+        background-color: rgba($color: #000000, $alpha: 0.3);
+        padding-bottom: 35px;
+    }
+    .main-nav__container {
         width: 78.33%;
-        // max-width: 940px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 0 auto;
     }
     .main-nav .wrapper {
-        width: auto;
+        display: inline;
         margin: 0;
+    }
+    .main-nav__logo-tablet {
+        display: none;
+    }
+    .main-nav__logo-desktop {
+        display: block;
     }
     .main-nav__button {
         display: none;
@@ -137,5 +187,16 @@
             padding: 0;
             width: auto;
         }
+    }
+    .main-nav__item--active a{
+        padding-bottom: 9px;
+        border-bottom: 2px solid #fff;
+    }
+    .main-nav__item:hover a[href]{
+        color: #d22856;
+    }
+    .main-nav__item:active a[href]{
+        color: #fff;
+        opacity: 0.3;
     }
 }

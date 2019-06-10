@@ -1,6 +1,9 @@
-
+.table-price {
+    display: none;
+}
 @media (min-width: $screen-tablet) {
     .table-price {
+        display: block;
         width: 100%;
         border-collapse: collapse;
     }

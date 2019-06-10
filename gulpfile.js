@@ -12,20 +12,25 @@ function browser() {
     })
 }
 
+function css() {
+    return src("src/sass/**/*.scss")
+    .pipe(sass())
+    .pipe(dest("src/css"))
+    .pipe(browserSync.stream());
+}
+
+function js() {
+    return src("src/js/*.js")
+    .pipe(dest("src/js"));
+}
+
 function watchFiles() {
     watch("src/sass/**/*.scss", css);
     watch("src/*.html").on('change', browserSync.reload);
 }
 
-function css() {
-    return src("src/sass/**/*.scss")
-        .pipe(sass())
-        .pipe(dest("src/css"))
-        .pipe(browserSync.stream());
-}
-
 exports.css = css;
 exports.default = series(
-    series(css), 
+    parallel(css, js), 
     parallel(browser, watchFiles)
 );

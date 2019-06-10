@@ -13,6 +13,19 @@
             align-items: center;
         }
     }
+    .page-footer__logo {
+        fill: #283645;
+    }
+    .page-footer__logo:hover {
+        fill: #d22856;
+    }
+    .page-footer__logo:active {
+        fill: #283645;
+        opacity: 0.3;
+    }
+    .page-footer__logo-desktop {
+        display: none;
+    }
     .page-footer__social-list {
         display: flex;
         width: 200px;
@@ -22,31 +35,55 @@
         list-style: none;
     }
     .page-footer__social-item {
-        width: 51px;
-        height: 51px;
-        background-color: #d22856;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        border: 3px solid #e9ebec;
         border-radius: 50%;
     }
+    .page-footer__social-item:hover {
+        border-color: #283645;
+    }
+    .page-footer__social-item:active {
+        border-color: #e9ebec;
+    }
+    .page-footer__social-item:active .page-footer__icon {
+        opacity: 0.3;
+    }
+    .page-footer__icon {
+        fill: #d22856;
+    }
     .page-footer__made {
-        position: relative;
+        display: flex;
+        align-items: center;
         font-size: 14px;
         line-height: 18px;
-        color: #283645;
-        text-decoration: none;
-        padding-right: 43px;
     }
-    .page-footer__made::after {
-        content: "";
-        position: absolute;
-        background-image: url(../img/academy-logo.png);
-        background-position: center center;
-        width: 27px;
-        height: 34px;
-        top: -5px;
-        right: 0;
+    .page-footer__dev {
+        margin-right: 15px;
+        text-decoration: none;
+        color: #283645;
+    }
+    .page-footer__made:hover .page-footer__academy-logo {
+        fill: #283645;
+    }
+    .page-footer__made:active .page-footer__academy-logo {
+        opacity: 0.3;
+    }
+    .page-footer__academy-logo {
+        margin-top: 5px;
+        fill: #d22856;
     }
 }
 @media (min-width: $screen-desktop) {
+    .page-footer__logo-desktop {
+        display: block;
+    }
+    .page-footer__logo-tablet {
+        display: none;
+    }
     .page-footer__made {
         font-size: 18px;
     }
