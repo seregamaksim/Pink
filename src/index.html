@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Pink</title>
 </head>
 <body class="main">
@@ -214,6 +214,14 @@
                     h0h0v0L10.5,70.3V17.6l66.7-7l66.7,7L143.9,70.4L143.9,70.4z"/>
             </g>
         </symbol>
+        <symbol id="arrow-left" viewBox="0 0 21.53 41.37">
+            <path d="M2.03,20.69L21.28,1.43c0.33-0.33,0.33-0.86,0-1.19c-0.33-0.33-0.86-0.33-1.19,0L0.25,20.09c-0.33,0.33-0.33,0.86,0,1.19
+            l19.85,19.85c0.16,0.16,0.38,0.25,0.59,0.25c0.21,0,0.43-0.08,0.59-0.25c0.33-0.33,0.33-0.86,0-1.19L2.03,20.69z"/>
+        </symbol>
+        <symbol id="arrow-right" viewBox="0 0 21.53 41.37">
+            <path d="M19.5,20.69L0.25,39.94c-0.33,0.33-0.33,0.86,0,1.19c0.33,0.33,0.86,0.33,1.19,0l19.85-19.85c0.33-0.33,0.33-0.86,0-1.19
+            L1.43,0.25C1.27,0.08,1.06,0,0.84,0C0.63,0,0.41,0.08,0.25,0.25c-0.33,0.33-0.33,0.86,0,1.19L19.5,20.69z"/>
+        </symbol>
     </svg>
     <header class="page-header">
         <nav class="page-header__nav main-nav">
@@ -340,34 +348,66 @@
             </div>
         </section>
         <section class="page-main__feedback slider">
-            <div class="slider__item slider-item1">
-                <h2>Николай Петров</h2>
-                <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной Фотографии!»</p>
-            </div>
-            <div class="slider__item">
-
-            </div>
-            <div class="slider__item">
-
-            </div>
-            <div class="slider__control">
-                
+            <div class="wrapper">
+                <div class="slider__item slider-item1">
+                    <div class="slider__item-name">
+                        <h2 class="slider__item-title">Николай Петров</h2>
+                        <p class="slider__item-age">25 лет, водитель трамвая</p>
+                    </div>
+                    <p class="slider__item-description">«Это приложение перевернуло мой мир и позволило по-новому 
+                        взглянуть на привычные серые вещи!
+                         А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                </div>
+                <div class="slider__item slider-item2">
+                    <div class="slider__item-name">
+                        <h2 class="slider__item-title">Василий Петров</h2>
+                        <p class="slider__item-age">25 лет, водитель трамвая</p>
+                    </div>
+                    <p class="slider__item-description">«Это приложение перевернуло мой мир и позволило по-новому 
+                        взглянуть на привычные серые вещи!
+                         А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                </div>
+                <div class="slider__item slider-item3">
+                    <div class="slider__item-name">
+                        <h2 class="slider__item-title">Иван Петров</h2>
+                        <p class="slider__item-age">25 лет, водитель трамвая</p>
+                    </div>
+                    <p class="slider__item-description">«Это приложение перевернуло мой мир и позволило по-новому 
+                        взглянуть на привычные серые вещи!
+                         А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                </div>
+                <div class="slider__control">
+                    <input type="radio" name="dots" id="dots1" checked>
+                    <label class="slider__contol-dots" for="dots1"></label>
+                    <input type="radio" name="dots" id="dots2">
+                    <label class="slider__contol-dots" for="dots2"></label>
+                    <input type="radio" name="dots" id="dots3">
+                    <label class="slider__contol-dots" for="dots3"></label>
+                </div>
+                <div class="slider__arrow">
+                    <svg class="slider__arrow-left" width="22" height="41">
+                        <use xlink:href="#arrow-left"></use>
+                    </svg>
+                    <svg class="slider__arrow-right" width="22" height="41">
+                        <use xlink:href="#arrow-right"></use>
+                    </svg>
+                </div>
             </div>
         </section>
         <section class="page-main__price">
             <div class="wrapper">
             <table class="table-price">
                 <thead class="table-price__header">
-                    <th></th>
-                    <th class="table-price__header-item">
+                    <th class="table-price__hidden" scope="col"></th>
+                    <th class="table-price__header-item" scope="col">
                         <h3 class="table-price__title">База</h3>
                         <p class="table-price__price">1,99 usd</p>
                     </th>
-                    <th class="table-price__header-item table-price__header-item--hit">
+                    <th class="table-price__header-item table-price__header-item--hit" scope="col">
                         <h3 class="table-price__title">Стандарт</h3>
                         <p class="table-price__price">3,99 usd</p>
                     </th>
-                    <th class="table-price__header-item">
+                    <th class="table-price__header-item" scope="col">
                         <h3 class="table-price__title">Анлим</h3>
                         <p class="table-price__price">9,99 usd</p>
                     </th>
@@ -375,24 +415,32 @@
                 <tbody class="table-price__body">
                     <tr>
                         <td class="table-price__function">Розовый фильтр</td>
-                        <td class="table-price__yes"></td>
-                        <td class="table-price__yes"></td>
-                        <td class="table-price__yes"></td>
+                        <td class="table-price__yes"><p>Розовый фильтр</p></td>
+                        <td class="table-price__yes"><p>Розовый фильтр</p></td>
+                        <td class="table-price__yes"><p>Розовый фильтр</p></td>
                     </tr>
                     <tr>
                         <td class="table-price__function">Смайлики</td>
-                        <td class="table-price__no"></td>
-                        <td class="table-price__yes"></td>
-                        <td class="table-price__yes"></td>
+                        <td class="table-price__no"><p>Смайлики</p></td>
+                        <td class="table-price__yes"><p>Смайлики</p></td>
+                        <td class="table-price__yes"><p>Смайлики</p></td>
                     </tr>
                     <tr>
                         <td class="table-price__function">Комментарии</td>
-                        <td class="table-price__no"></td>
-                        <td class="table-price__no"></td>
-                        <td class="table-price__yes"></td>
+                        <td class="table-price__no"><p>Комментарии</p></td>
+                        <td class="table-price__no"><p>Комментарии</p></td>
+                        <td class="table-price__yes"><p>Комментарии</p></td>
                     </tr>
                 </tbody>
             </table>
+            </div>
+            <div class="table-price__control">
+                <input type="radio" name="dots-price" id="dots-price1">
+                <label class="table-price__contol-dots" for="dots-price1"></label>
+                <input type="radio" name="dots-price" id="dots-price2" checked>
+                <label class="table-price__contol-dots" for="dots-price2"></label>
+                <input type="radio" name="dots-price" id="dots-price3">
+                <label class="table-price__contol-dots" for="dots-price3"></label>
             </div>
         </section>
         <section class="page-main__contact contact">
@@ -407,7 +455,7 @@
                         </li>
                         <li class="contact__item">
                             <h3>Пишите:</h3>
-                            <p>mail@htmlacademy.ru</p>
+                            <p><a class="contact__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
                         </li>
                         <li class="contact__item">
                             <h3>Приезжайте в гости:</h3>

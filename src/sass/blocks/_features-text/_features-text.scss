@@ -1,6 +1,6 @@
 .features-text {
     // background-color: #f2f2f2;
-    background-image: url(../../img/Shape2.png);
+    background-image: url(../img/Shape2.png);
     background-position: center center;
     background-repeat: no-repeat;
     .wrapper {
@@ -25,11 +25,10 @@
         line-height: 24px;
         color: #283645;
     }
-
 }
 @media (min-width: $screen-tablet) {
     .features-text {
-        background-image: url(../../img/Shape2-tablet.png);
+        background-image: url(../img/Shape2-tablet.png);
         background-position: center -5px;
         // Отрицательные значения, чтобы немного опустить фон
     }
@@ -45,12 +44,11 @@
     .features-text__item {
         max-width: 310px;
         text-align: left;
-        
     }
 }
 @media (min-width: $screen-desktop) {
     .features-text {
-        background-image: url(../../img/Shape2-desktop.png);
+        background-image: url(../img/Shape2-desktop.png);
         background-position: center 10px;
     }
     .features-text .wrapper {

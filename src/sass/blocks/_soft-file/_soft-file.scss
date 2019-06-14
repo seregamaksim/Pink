@@ -22,7 +22,13 @@
     border: 3px solid #fff;
     border-radius: 30px;
     padding: 15px 35px 15px 36px;
-    
+}
+.soft-file__download:hover {
+    background-color: #fff;
+    color: rgba(210, 40, 86, 1);
+}
+.soft-file__download:active {
+    color: rgba(210, 40, 86, 0.3);
 }
 .soft-file__list {
     display: flex;

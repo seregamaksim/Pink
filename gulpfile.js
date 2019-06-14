@@ -1,6 +1,11 @@
-const { src, dest, parallel, watch, series } = require('gulp');
-const sass = require('gulp-sass');
-const browserSync = require('browser-sync').create();
+const { src, dest, parallel, watch, series } = require("gulp");
+const sass = require("gulp-sass");
+const plumber = require("gulp-plumber");
+const postcss = require("gulp-postcss");
+const autoprefixer = require("autoprefixer");
+const minify = require("gulp-csso");
+const rename = require("gulp-rename");
+const browserSync = require("browser-sync").create();
 
 
 function browser() {
@@ -14,23 +19,26 @@ function browser() {
 
 function css() {
     return src("src/sass/**/*.scss")
+    .pipe(plumber())
     .pipe(sass())
+    .pipe(postcss([
+        autoprefixer()
+    ]))
+    .pipe(dest("src/css"))
+    .pipe(minify())
+    .pipe(rename("style.min.css"))
     .pipe(dest("src/css"))
     .pipe(browserSync.stream());
 }
 
-function js() {
-    return src("src/js/*.js")
-    .pipe(dest("src/js"));
-}
 
 function watchFiles() {
     watch("src/sass/**/*.scss", css);
-    watch("src/*.html").on('change', browserSync.reload);
+    watch("src/*.html").on("change", browserSync.reload);
 }
 
 exports.css = css;
 exports.default = series(
-    parallel(css, js), 
+    series(css), 
     parallel(browser, watchFiles)
 );

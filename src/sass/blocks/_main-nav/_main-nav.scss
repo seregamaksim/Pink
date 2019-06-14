@@ -46,6 +46,7 @@
 .main-nav__button:hover span::before,
 .main-nav__button:hover span::after {
     background-color: #d22856;
+    transition: 0s;
 }
 .main-nav__button:active span,
 .main-nav__button:active span::before,
@@ -153,8 +154,9 @@
         margin: 0 auto;
     }
     .main-nav .wrapper {
-        display: inline;
+        display: inline-block;
         margin: 0;
+        width: auto;
     }
     .main-nav__logo-tablet {
         display: none;
