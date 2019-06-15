@@ -19,10 +19,15 @@ function browser() {
 
 function css() {
     return src("src/sass/**/*.scss")
-    .pipe(plumber())
+    .pipe(plumber({
+        errorHandler: function (err) {
+            console.log(err);
+            this.emit("end");
+        }
+    }))
     .pipe(sass())
     .pipe(postcss([
-        autoprefixer()
+        autoprefixer("last 2 version")
     ]))
     .pipe(dest("src/css"))
     .pipe(minify())

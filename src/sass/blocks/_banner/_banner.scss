@@ -1,0 +1,25 @@
+.banner {
+    color: #283645;
+    line-height: 30px;
+    text-align: center;
+    width: 87.5%;
+    margin: 0 auto;
+    padding: 47px 0;
+    background-color: #fff;
+    max-width: 250px;
+}
+.banner__description {
+    margin: 0;
+}
+@media (min-width: $screen-tablet) {
+    .banner {
+        font-size: 18px;
+        padding: 90px 0 70px 0;
+        max-width: 450px;
+    }
+}
+@media (min-width: $screen-desktop) {
+    .banner {
+        max-width: 600px;
+    }
+}
