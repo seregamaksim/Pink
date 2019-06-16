@@ -228,7 +228,7 @@
             </g>
         </symbol>
     </svg>
-    <header class="page-header">
+    <header class="page-header gallery__header">
         <nav class="page-header__nav main-nav">
             <div class="main-nav__container">
                 <div class="wrapper">
@@ -267,10 +267,115 @@
             <h1 class="page-title__title">Фотографии<br> пользователей</h1>
         </section>
     </header>
-    <section class="banner">
-        <p class="banner__description">Взгляните на фотографии, которые выкладывают пользователи!
-            Видите, как не хватает ваших?</p>
-    </section>
+    <main class="gallery__main">
+        <section class="banner">
+            <p class="banner__description">Взгляните на фотографии, которые выкладывают пользователи!
+                Видите, как не хватает ваших?</p>
+        </section>
+        <section class="photogallery">
+            <article class="photogallery__panorama">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg">
+                    <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg">
+                    <img class="photogallery__item-photo-panorama photogallery__item-photo-panorama--month" src="img/panorama-mobile.jpg" alt="Панорама месяца">
+                </picture>
+                <div class="photogallery__item-description photogallery__item-description--special">
+                    <h3 class="photogallery__item-name">Анна <span class="photogallery__item-name-time">(5 минут назад)</span></h3>
+                    <p class="photogallery__item-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                    <button class="photogallery__item-like" type="button">
+                        Нравится: <span class="photogallery__item-like-number">215</span>
+                    </button>
+                </div>
+            </article>
+            <div class="wrapper">
+                <article class="photogallery__item">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg">
+                        <source media="(min-width: 660px)" srcset="img/photo-1-tablet.jpg">
+                        <img class="photogallery__item-photo" src="img/photo-1-mobile.jpg" alt="Фотография пользователя">
+                    </picture>
+                    <div class="photogallery__item-description">
+                        <h3 class="photogallery__item-name">Левон <span class="photogallery__item-name-time">(5 часов назад)</span></h3>
+                        <p class="photogallery__item-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                        <button class="photogallery__item-like" type="button">
+                            Нравится: <span class="photogallery__item-like-number">356</span>
+                        </button>
+                    </div>
+                </article>
+                <article class="photogallery__item">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg">
+                        <source media="(min-width: 660px)" srcset="img/photo-2-tablet.jpg">
+                        <img class="photogallery__item-photo" src="img/photo-2-mobile.jpg" alt="Фотография пользователя">
+                    </picture>
+                    <div class="photogallery__item-description">
+                        <h3 class="photogallery__item-name">Антон <span class="photogallery__item-name-time">(12 часов назад)</span></h3>
+                        <p class="photogallery__item-text">Соседи будут рады!</p>
+                        <button class="photogallery__item-like" type="button">
+                            Нравится: <span class="photogallery__item-like-number">666</span>
+                            
+                        </button>
+                    </div>
+                </article>
+                <article class="photogallery__item">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg">
+                        <source media="(min-width: 660px)" srcset="img/photo-3-tablet.jpg">
+                        <img class="photogallery__item-photo" src="img/photo-3-mobile.jpg" alt="Фотография пользователя">
+                    </picture>
+                    <div class="photogallery__item-description">
+                        <h3 class="photogallery__item-name">Борис <span class="photogallery__item-name-time">(20 часов назад)</span></h3>
+                        <p class="photogallery__item-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                        <button class="photogallery__item-like" type="button">
+                            Нравится: <span class="photogallery__item-like-number">215</span>
+                        </button>
+                    </div>
+                </article>
+                <article class="photogallery__item">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg">
+                        <source media="(min-width: 660px)" srcset="img/photo-4-tablet.jpg">
+                        <img class="photogallery__item-photo" src="img/photo-4-mobile.jpg" alt="Фотография пользователя">
+                    </picture>
+                    <div class="photogallery__item-description">
+                        <h3 class="photogallery__item-name">Сергей <span class="photogallery__item-name-time">(25 часов назад)</span></h3>
+                        <p class="photogallery__item-text">Самая кубанская в мире!</p>
+                        <button class="photogallery__item-like" type="button">
+                            Нравится: <span class="photogallery__item-like-number">4</span>
+                        </button>
+                    </div>
+                </article>
+                <article class="photogallery__item">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/photo-5-desktop.jpg">
+                        <source media="(min-width: 660px)" srcset="img/photo-5-tablet.jpg">
+                        <img class="photogallery__item-photo" src="img/photo-5-mobile.jpg" alt="Фотография пользователя">
+                    </picture>
+                    <div class="photogallery__item-description">
+                        <h3 class="photogallery__item-name">Максим <span class="photogallery__item-name-time">(40 часов назад)</span></h3>
+                        <p class="photogallery__item-text">Где снег-то?</p>
+                        <button class="photogallery__item-like" type="button">
+                            Нравится: <span class="photogallery__item-like-number">150</span>
+                        </button>
+                    </div>
+                </article>
+                <article class="photogallery__item">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/photo-6-desktop.jpg">
+                        <source media="(min-width: 660px)" srcset="img/photo-6-tablet.jpg">
+                        <img class="photogallery__item-photo" src="img/photo-6-mobile.jpg" alt="Фотография пользователя">
+                    </picture>
+                    <div class="photogallery__item-description">
+                        <h3 class="photogallery__item-name">Надежда <span class="photogallery__item-name-time">(45 часов назад)</span></h3>
+                        <p class="photogallery__item-text">Всем GM и взаимные лайки!</p>
+                        <button class="photogallery__item-like" type="button">
+                            Нравится: <span class="photogallery__item-like-number">2560</span>
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
     <footer class="gallery__footer page-footer">
         <div class="wrapper">
             <a class="page-footer__logo" href="index.html">

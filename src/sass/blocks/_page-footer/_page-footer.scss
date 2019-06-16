@@ -64,16 +64,17 @@
     text-decoration: none;
     color: #283645;
 }
+.page-footer__academy-logo {
+    margin-top: 5px;
+    fill: #d22856;
+}
 .page-footer__made:hover .page-footer__academy-logo {
     fill: #283645;
 }
 .page-footer__made:active .page-footer__academy-logo {
     opacity: 0.3;
 }
-.page-footer__academy-logo {
-    margin-top: 5px;
-    fill: #d22856;
-}
+
 @media (min-width: $screen-tablet) {
     .page-footer {
         display: block;
