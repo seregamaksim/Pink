@@ -227,6 +227,22 @@
                     C523.92,478.34,523.93,478.34,523.93,478.35z"/>
             </g>
         </symbol>
+        <symbol id="crop" viewBox="0 0 44 44">
+            <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+        </symbol>
+        <symbol id="fill" viewBox="0 0 48 43">
+            <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11
+                C18.46,33.71,19.23,34,20,34s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z
+                 M38,23c0,0-4,4.33-4,7c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+            <rect y="40" width="48" height="3"/>
+        </symbol>
+        <symbol id="contrast" viewBox="0 0 16 16">
+            <g>
+                <path class="per" d="M8,3v10c2.762,0,5-2.238,5-5S10.762,3,8,3z"/>
+                <path class="per" d="M8,0C3.582,0,0,3.582,0,8s3.582,8,8,8s8-3.582,8-8S12.418,0,8,0z M8,14c-3.313,0-6-2.687-6-6
+                    s2.687-6,6-6s6,2.687,6,6S11.313,14,8,14z"/>
+            </g>
+        </symbol>
     </svg>
     <header class="page-header gallery__header">
         <nav class="page-header__nav main-nav">
@@ -248,10 +264,10 @@
                     </a>
                 </div>
                 <ul class="main-nav__list">
-                    <li class="main-nav__item main-nav__item--active">
+                    <li class="main-nav__item">
                         <a href="index.html">Главная</a>
                     </li>
-                    <li class="main-nav__item">
+                    <li class="main-nav__item main-nav__item--active">
                         <a>Фотографии</a>
                     </li>
                     <li class="main-nav__item">
@@ -377,6 +393,49 @@
             <div class="photogallery__down-banner">
                 <p>Затмите их всех!</p>
                 <p>Выкладывайте все, что накопилось в телефоне!</p>
+            </div>
+        </section>
+        <section class="filter">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-7-desktop.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-7-tablet.jpg">
+                <img class="filter__photo" src="img/photo-7-mobile.jpg" alt="Фото на обработку">
+            </picture>
+            <div class="wrapper">
+                <div class="filter__editor">
+                    <div class="filter__icon-wrap">
+                        <button class="filter__icon filter__icon--active filter__icon-crop">
+                            <svg>
+                                <use xlink:href="#crop"></use>
+                            </svg>
+                        </button>
+                        <button class="filter__icon filter__icon-fill">
+                            <svg>
+                                <use xlink:href="#fill"></use>
+                            </svg>
+                        </button>
+                        <button class="filter__icon filter__icon-contrast">
+                            <svg>
+                                <use xlink:href="#contrast"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="filter__control">
+                        <div class="filter__control-track filter__control-crop">
+                            <span class="filter__control-thumb filter__control-thumb-crop"></span>
+                        </div>
+                        <div class="filter__control-track filter__control-fill">
+                            <span class="filter__control-thumb filter__control-thumb-fill"></span>
+                        </div>
+                        <div class="filter__control-track filter__control-contrast">
+                            <span class="filter__control-thumb filter__control-thumb-contrast"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter__button">
+                    <button class="filter__button-post">Запостить</button>
+                    <button class="filter__button-reset" type="reset">Отмена</button>
+                </div>
             </div>
         </section>
     </main>
