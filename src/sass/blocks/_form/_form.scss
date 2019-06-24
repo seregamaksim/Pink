@@ -1,3 +1,7 @@
+fieldset {
+    padding: 0;
+    margin: 0;
+}
 .form {
     display: flex;
     flex-direction: column;
@@ -23,7 +27,9 @@
 .form__full-name-item input[type="text"] {
     border: 2px solid #e5e5e5;
     padding: 22px 78px 18px 20px;
+    width: 178px;
     max-width: 280px;
+    
 }
 .form__full-name-item input[type="text"]:hover {
     border-color: #283645;
@@ -46,7 +52,6 @@
     font-size: 18px;
     color: #283645;
     opacity: 1;
-    width: 200px;
     text-overflow: ellipsis;
 }
 .form__full-name-item input[type="text"]:focus::-moz-placeholder {
@@ -166,7 +171,9 @@
     padding-bottom: 18px;
 }
 
-.form__contact-info-item input[type="tel"] {
+.form__contact-info-item input[type="tel"],
+.form__contact-info-item input[type="email"] {
+    width: 178px;
     padding-right: 75px;
 }
 .form__contact-info-item input[type="tel"]:hover,
@@ -261,8 +268,8 @@
     height: 15px;
     border-radius: 50px;
     background-color: #d22856;
-    top: 4px;
-    left: 11px;
+    top: 5px;
+    left: 12px;
 }
 .form__app-item input[type="radio"]:hover + label::before {
     border-color: #283645;
@@ -301,6 +308,9 @@
     border: 2px solid #e5e5e5;
     border-radius: 2px;
     padding: 0;
+    /* Центровка маргином
+    для хрома */
+    margin: 0 auto;
     padding-left: 20px;
     padding-top: 18px;
     padding-right: 20px;
@@ -425,16 +435,9 @@
         padding-top: 50px;
         padding-bottom: 10px;
     }
-    .form__contact-info-item input[type="tel"]::after,
-    .form__contact-info-item input[type="email"]::after {
-        position: absolute;
-        content: "";
-        display: inline-block;
-        width: 58px;
-        height: 58px;
-        background-color: #e5e5e5;
-        right: 0;
-        top: 0;
+    .form__contact-info-item input[type="tel"],
+    .form__contact-info-item input[type="email"] {
+        width: auto;
     }
     .form__contact-info-item input[type="tel"] {
         background-image: url(../img/svg/phone.svg);

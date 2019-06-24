@@ -12,10 +12,10 @@
 .main-nav__logo {
     fill: white;
 }
-.main-nav__logo:hover {
+.main-nav__logo[href]:hover {
     fill: #d22856;
 }
-.main-nav__logo:active {
+.main-nav__logo[href]:active {
     fill: white;
     opacity: 0.3;
 }

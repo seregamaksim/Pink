@@ -13,10 +13,10 @@
     fill: #283645;
     margin-bottom: 40px;
 }
-.page-footer__logo:hover {
+.page-footer__logo[href]:hover {
     fill: #d22856;
 }
-.page-footer__logo:active {
+.page-footer__logo[href]:active {
     fill: #283645;
     opacity: 0.3;
 }
