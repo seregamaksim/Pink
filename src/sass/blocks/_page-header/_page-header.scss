@@ -5,13 +5,31 @@
     background-size: cover;
     background-color: #2b3b4b;
 }
+@media (min-resolution: 144dpi),
+       (min-resolution: 1.5dppx) {
+    .page-header {
+        background-image: url("../img/bg-mobile@2x.png");
+    }
+}
 @media (min-width: $screen-tablet) {
     .page-header {
         background-image: url("../img/bg-tablet.png");
+    }
+    @media (min-resolution: 144dpi),
+           (min-resolution: 1.5dppx) {
+        .page-header {
+            background-image: url("../img/bg-tablet@2x.png");
+        }
     }
 }
 @media (min-width: $screen-desktop) {
     .page-header {
         background-image: url("../img/bg-desktop.png");
+    }
+    @media (min-resolution: 144dpi),
+           (min-resolution: 1.5dppx) {
+        .page-header {
+            background-image: url("../img/bg-desktop@2x.png");
+        }
     }
 }

@@ -261,9 +261,11 @@
         <section class="page-header__soft soft">
             <div class="wrapper">
                 <picture>
-                    <source media="(min-width: 1200px)" srcset="img/iphone-desktop.png">
-                    <source media="(min-width: 660px)" srcset="img/iphone-tablet.png">
-                    <img class="soft__iphone" src="img/iphone-mobile.png" alt="Как это выглядит">
+                    <source media="(min-width: 1200px)" srcset="img/iphone-desktop.png 1x,
+                                                                img/iphone-desktop@2x.png 2x">
+                    <source media="(min-width: 660px)" srcset="img/iphone-tablet.png 1x, 
+                                                            img/iphone-tablet@2x.png 2x">
+                    <img class="soft__iphone" src="img/iphone-mobile.png" srcset="img/iphone-mobile@2x.png 2x" alt="Как это выглядит">
                 </picture>
             </div>
             <div class="soft__file soft-file">
@@ -315,21 +317,25 @@
                     <ul class="features__example example">
                         <li class="example__item iphone-before">
                             <picture>
-                                <source media="(min-width: 1200px)" srcset="img/iphone-screen-desktop1.png">
+                                <source media="(min-width: 1200px)" srcset="img/iphone-screen-desktop1.png 1x, 
+                                                                            img/iphone-screen-desktop1@2x.png 2x">
                                 <img src="" alt="Фото без фильтра">
                             </picture>
                         </li>
                         <li class="example__item iphone-after">
                             <picture>
-                                <source media="(min-width: 1200px)" srcset="img/iphone-screen-desktop2.png">
+                                <source media="(min-width: 1200px)" srcset="img/iphone-screen-desktop2.png 1x,
+                                                                            img/iphone-screen-desktop2@2x.png 2x">
                                 <img src="" alt="Фото с фильтром">
                             </picture>
                         </li>
                         <li class="example__item">
                             <picture>
-                                <source media="(min-width: 1200px)" srcset="img/iphone-screen-desktop3.png">
-                                <source media="(min-width: 660px)" srcset="img/iphone-screen-tablet.png">
-                                <img src="img/iphone-screen-mobile.png" alt="Фото с фильтром и подписью">
+                                <source media="(min-width: 1200px)" srcset="img/iphone-screen-desktop3.png 1x, 
+                                                                            img/iphone-screen-desktop3@2x.png 2x">
+                                <source media="(min-width: 660px)" srcset="img/iphone-screen-tablet.png 1x, 
+                                                                           img/iphone-screen-tablet@2x.png 2x">
+                                <img src="img/iphone-screen-mobile.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Фото с фильтром и подписью">
                             </picture>
                         </li>
                     </ul>
@@ -339,8 +345,9 @@
         <section class="page-main__effect effect">
             <div class="wrapper">
                 <picture>
-                    <source media="(min-width: 1200px)" srcset="img/clock-desktop.png">
-                    <img class="effect__clock" src="img/clock.png" alt="24 часа">
+                    <source media="(min-width: 1200px)" srcset="img/clock-desktop.png 1x, 
+                                                                img/clock-desktop@2x.png 2x">
+                    <img class="effect__clock" src="img/clock.png" srcset="img/clock@2x.png 2x" alt="24 часа">
                 </picture>
                 <div class="effect__text">
                     <h2 class="effect__title">Эффект<br> на 24 часа!</h2>

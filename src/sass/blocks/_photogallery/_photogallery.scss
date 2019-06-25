@@ -26,9 +26,7 @@
 .photogallery__item {
     margin-bottom: 20px;
 }
-// .photogallery__item:last-child {
-//     margin-bottom: 0;
-// }
+
 .photogallery__item-description {
     display: flex;
     flex-direction: column;
@@ -39,7 +37,6 @@
 .photogallery__item-description--special {
     // Из-за паддинга слева, не выходила ширина 280
     max-width: 262px;
-    
 }
 .photogallery__item-name,
 .photogallery__item-text {
@@ -109,6 +106,7 @@
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
+        align-items: center;
     }
     .photogallery__item-description--special .photogallery__item-text {
         margin-bottom: 0;
@@ -123,11 +121,13 @@
         width: 240px;
         background-position: right center;
         padding-left: 0;
+        margin-top: auto;
     }
     .photogallery__item-description--special .photogallery__item-like {
         width: 120px;
         background-position: right center;
         padding-left: 0;
+        margin-top: 0;
     }
     .photogallery .wrapper {
         display: flex;
@@ -139,8 +139,6 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
-    }.photogallery__item-like {
-        margin-top: auto;
     }
     .photogallery__item-description {
         // // ЧТобы была у блоков одинаковая высота
@@ -148,7 +146,6 @@
         min-height: 92px;
         /* Иначе блоки скачут на всю высоту экрана */
     }
-    
     .photogallery__down-banner {
         font-size: 18px;
         padding: 48px 0 65px 0;
