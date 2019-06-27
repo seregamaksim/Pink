@@ -10,11 +10,21 @@
     position: absolute;
     top: 0;
     padding-top: 50px;
-    padding-bottom: 75px;
+    padding-bottom: 15px;
     width: 100%;
     text-align: center;
     background-color: #fff;
 }
+.contact__address::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -49px;
+    background: transparent;
+    border-top: 50px solid #fff;
+    border-right: 50vw solid transparent;
+    border-left: 50vw solid transparent;
+} 
 .contact .wrapper {
     display: flex;
     flex-direction: column;
@@ -68,11 +78,14 @@
         margin-bottom: 0;
     }
 }
-
 @media (min-width: $screen-tablet) {
     .contact__address {
-        padding-bottom: 100px;
+        padding-bottom: 50px;
     }
+    .contact__address::after {
+        bottom: -49px;
+        border-top: 75 solid #fff;
+    } 
     .contact__question {
         font-size: 40px;
         line-height: 40px;
@@ -87,11 +100,15 @@
 }
 @media (min-width: $screen-desktop) {
     .contact__map {
-        margin-top: 400px;
+        margin-top: 300px;
     }
     .contact__address {
-        padding-bottom: 125px;
+        padding-bottom: 0;
     }
+    .contact__address::after {
+        bottom: -115px;
+        border-top: 100px solid #fff;
+    } 
     .contact__question {
         font-size: 50px;
         line-height: 50px;

@@ -253,7 +253,7 @@
                         <a href="competition.html">Конкурс</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="">HTML Academy</a>
+                        <a href="https://htmlacademy.ru">HTML Academy</a>
                     </li>
                 </ul>
             </div>
@@ -261,10 +261,11 @@
         <section class="page-header__soft soft">
             <div class="wrapper">
                 <picture>
-                    <source media="(min-width: 1200px)" srcset="img/iphone-desktop.png 1x,
-                                                                img/iphone-desktop@2x.png 2x">
-                    <source media="(min-width: 660px)" srcset="img/iphone-tablet.png 1x, 
-                                                            img/iphone-tablet@2x.png 2x">
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/iphone-desktop.webp 1x, img/iphone-desktop@2x.webp 2x">
+                    <source media="(min-width: 660px)" type="image/webp" srcset="img/iphone-tablet.webp 1x, img/iphone-tablet@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/iphone-desktop.png 1x, img/iphone-desktop@2x.png 2x">
+                    <source media="(min-width: 660px)" srcset="img/iphone-tablet.png 1x, img/iphone-tablet@2x.png 2x">
+                    <source type="image/webp" srcset="img/iphone-mobile.webp 1x, img/iphone-mobile@2x.webp 2x">
                     <img class="soft__iphone" src="img/iphone-mobile.png" srcset="img/iphone-mobile@2x.png 2x" alt="Как это выглядит">
                 </picture>
             </div>
@@ -274,13 +275,13 @@
                     <a class="soft-file__download" href="">Скачать приложение</a>
                     <ul class="soft-file__list">
                         <li>
-                            <a class="soft-file__item apple" href=""></a>
+                            <a class="soft-file__item apple" href="https://apps.apple.com"></a>
                         </li>
                         <li>
-                            <a class="soft-file__item android" href=""></a>
+                            <a class="soft-file__item android" href="https://play.google.com"></a>
                         </li>
                         <li>
-                            <a class="soft-file__item microsoft" href=""></a>
+                            <a class="soft-file__item microsoft" href="https://www.microsoft.com/ru-ru/store/b/home"></a>
                         </li>
                     </ul>
                     <p class="soft-file__description">
@@ -317,6 +318,8 @@
                     <ul class="features__example example">
                         <li class="example__item iphone-before">
                             <picture>
+                                <source media="(min-width: 1200px)" type="image/webp" srcset="img/iphone-screen-desktop1.webp 1x, 
+                                                                                              img/iphone-screen-desktop1@2x.webp 2x">
                                 <source media="(min-width: 1200px)" srcset="img/iphone-screen-desktop1.png 1x, 
                                                                             img/iphone-screen-desktop1@2x.png 2x">
                                 <img src="" alt="Фото без фильтра">
@@ -324,6 +327,8 @@
                         </li>
                         <li class="example__item iphone-after">
                             <picture>
+                                <source media="(min-width: 1200px)" type="image/webp" srcset="img/iphone-screen-desktop2.webp 1x, 
+                                                                                              img/iphone-screen-desktop2@2x.webp 2x">
                                 <source media="(min-width: 1200px)" srcset="img/iphone-screen-desktop2.png 1x,
                                                                             img/iphone-screen-desktop2@2x.png 2x">
                                 <img src="" alt="Фото с фильтром">
@@ -331,10 +336,15 @@
                         </li>
                         <li class="example__item">
                             <picture>
+                                <source media="(min-width: 1200px)" type="image/webp" srcset="img/iphone-screen-desktop3.webp 1x, 
+                                                                                              img/iphone-screen-desktop3@2x.webp 2x">
+                                <source media="(min-width: 660px)" type="image/webp" srcset="img/iphone-screen-tablet.webp 1x, 
+                                                                                            img/iphone-screen-tablet@2x.webp 2x">
                                 <source media="(min-width: 1200px)" srcset="img/iphone-screen-desktop3.png 1x, 
                                                                             img/iphone-screen-desktop3@2x.png 2x">
                                 <source media="(min-width: 660px)" srcset="img/iphone-screen-tablet.png 1x, 
                                                                            img/iphone-screen-tablet@2x.png 2x">
+                                <source type="image/webp" srcset="img/iphone-screen-mobile.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
                                 <img src="img/iphone-screen-mobile.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Фото с фильтром и подписью">
                             </picture>
                         </li>
@@ -345,8 +355,11 @@
         <section class="page-main__effect effect">
             <div class="wrapper">
                 <picture>
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/clock-desktop.webp 1x, 
+                                                                                  img/clock-desktop@2x.webp 2x">
                     <source media="(min-width: 1200px)" srcset="img/clock-desktop.png 1x, 
                                                                 img/clock-desktop@2x.png 2x">
+                    <source type="image/webp" srcset="img/clock.webp 1x, img/clock@2x.webp 2x">
                     <img class="effect__clock" src="img/clock.png" srcset="img/clock@2x.png 2x" alt="24 часа">
                 </picture>
                 <div class="effect__text">
@@ -488,24 +501,30 @@
             </a>
             <ul class="page-footer__social-list">
                 <li class="page-footer__social-item">
-                    <svg class="page-footer__icon" width="18" height="14">
-                        <use xlink:href="#twitter"></use>
-                    </svg>
+                    <a href="https://twitter.com">
+                        <svg class="page-footer__icon" width="18" height="14">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                    </a>
                 </li>
                 <li class="page-footer__social-item">
-                    <svg class="page-footer__icon" width="9" height="18">
-                        <use xlink:href="#facebook"></use>
-                    </svg>
+                    <a href="https://www.facebook.com">
+                        <svg class="page-footer__icon" width="9" height="18">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
                 </li>
                 <li class="page-footer__social-item">
-                    <svg class="page-footer__icon" width="15" height="13">
-                        <use xlink:href="#youtube"></use>
-                    </svg>
+                    <a href="https://www.youtube.com/">
+                        <svg class="page-footer__icon" width="15" height="13">
+                            <use xlink:href="#youtube"></use>
+                        </svg>
+                    </a>
                 </li>
             </ul>
             <div class="page-footer__made">
-                <a class="page-footer__dev" href="">Разработано</a>
-                <a class="page-footer__academy-logo" href="">
+                <a class="page-footer__dev" href="https://htmlacademy.ru">Разработано</a>
+                <a class="page-footer__academy-logo" href="https://htmlacademy.ru">
                     <svg width="27" height="34">
                         <use xlink:href="#academy-logo"></use>
                     </svg>

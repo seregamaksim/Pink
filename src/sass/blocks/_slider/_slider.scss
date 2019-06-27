@@ -1,6 +1,5 @@
 .slider {
     margin-top: 45px;
-    margin-bottom: 45px;
 }
 .slider .wrapper{
     position: relative;
@@ -70,9 +69,6 @@
 }
 
 @media (min-width: $screen-tablet) {
-    .slider {
-        margin-bottom: 20px;
-    }
     .slider__item {
         flex-direction: column-reverse;
     }
@@ -97,11 +93,11 @@
 }
 @media (min-width: $screen-desktop) {
     .slider {
-        background-image: url(../img/svg/quotes.svg);
+        background-image: url("../img/svg/quotes.svg");
         background-repeat: no-repeat;
         background-position: center 20px;
         background-size: 79px 63px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
     .slider .wrapper {
         padding-top: 100px;
@@ -130,6 +126,7 @@
         top: 50%;
         cursor: pointer;
     }
+    
     .slider__arrow-left:hover,
     .slider__arrow-right:hover {
         opacity: 1;

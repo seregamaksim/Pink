@@ -28,4 +28,9 @@ $RECYCLE.BIN/
 build/
 node_modules/
 .vscode
+*.ai
+*.log
+*.pdf
+*.psd
+npm-degug.*
 # End of https://www.gitignore.io/api/windows

@@ -1,11 +1,13 @@
 .features-text {
-    // background-color: #f2f2f2;
-    background-image: url(../img/Shape2.png);
-    background-position: center center;
+    background-color: #f2f2f2;
+    background-image: url("../img/svg/triangle-mobile.svg");
+    background-position: center top;
+    background-size: 1172px 117px;
     background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
     .wrapper {
-        // Паддинг для того, чтобы фон встал как надо
-        padding-top: 87px;
+        padding-top: 100px;
     }
     &__list {
         display: flex;
@@ -28,9 +30,8 @@
 }
 @media (min-width: $screen-tablet) {
     .features-text {
-        background-image: url(../img/Shape2-tablet.png);
-        background-position: center -5px;
-        // Отрицательные значения, чтобы немного опустить фон
+        background-image: url("../img/svg/triangle-tablet.svg");
+        background-size: 1281px 98px;
     }
     .features-text .wrapper {
         display: flex;
@@ -48,8 +49,8 @@
 }
 @media (min-width: $screen-desktop) {
     .features-text {
-        background-image: url(../img/Shape2-desktop.png);
-        background-position: center 10px;
+        background-image: url("../img/svg/triangle-desktop.svg");
+        background-size: 1441px 110px;
     }
     .features-text .wrapper {
         flex-direction: column-reverse;

@@ -1,6 +1,10 @@
 .page-main__price {
     background-color: #f2f2f2;
-    padding-top: 90px;
+    background-image: url("../img/svg/triangle-mobile.svg");
+    background-position: center top;
+    background-size: 1172px 117px;
+    background-repeat: no-repeat;
+    padding-top: 130px;
     padding-bottom: 47px;
 }
 .page-main__price .wrapper {
@@ -132,6 +136,8 @@ td {
 // Завершение кнопок переключения
 @media (min-width: $screen-tablet) {
     .page-main__price {
+        background-image: url("../img/svg/triangle-tablet.svg");
+        background-size: 1281px 98px;
         padding-bottom: 68px;
     }
     .table-price__control {
@@ -203,6 +209,8 @@ td {
 }
 @media (min-width: $screen-desktop) {
     .page-main__price {
+        background-image: url("../img/svg/triangle-desktop.svg");
+        background-size: 1441px 110px;
         padding-top: 150px;
         padding-bottom: 90px;
     }
