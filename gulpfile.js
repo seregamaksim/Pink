@@ -11,7 +11,6 @@ const extReplace = require("gulp-ext-replace");
 const del = require("del");
 const browserSync = require("browser-sync").create();
 
-
 function browser() {
     browserSync.init({
         server: {
@@ -69,7 +68,8 @@ function copy() {
     return src([
         "src/fonts/**/*.{woff,woff2}",
         "src/img/**",
-        "src/js/**"
+        "src/js/**",
+        "src/css/**"
     ], {
         base: "src"
     })
