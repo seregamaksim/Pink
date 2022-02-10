@@ -15,7 +15,7 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "imagemin-webp": "^5.1.0",
-    "node-sass": "^4.11.0"
+    "node-sass": "^7.0.0"
   },
   "devDependencies": {
     "gulp-imagemin": "^6.0.0",
